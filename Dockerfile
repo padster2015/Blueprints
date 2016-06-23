@@ -1,8 +1,9 @@
 FROM centos:6.6 
-MAINTAINER Petri Sirkkala "sirpete@iki.fi"
+MAINTAINER patrick henry <"patrick.henry@rakuten.com"
 RUN yum -y update && yum -y install httpd && yum -y install epel-release
 RUN yum -y clean all
 RUN yum -y install nodejs
+RUN yum -y install git
 RUN yum install -y centos-release-SCL
 RUN yum install -y python27
 RUN yum install gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison iconv-develRUN yum -y install ruby
